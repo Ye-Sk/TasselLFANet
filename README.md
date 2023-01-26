@@ -28,10 +28,6 @@ $ pip install -r requirements.txt
 ~~~
 
 # Build your own dataset
-<p align="center">
-  <img src="https://github.com/Ye-Sk/MrMT/blob/master/annot.png"/>
-</p>  
-
 **To train your own datasets on this framework, we recommend that :**  
 * Annotate your data with the image annotation tool [LabelIMG](https://github.com/heartexlabs/labelImg) to generate `.txt` labels.   
 * Refer to the `config/data.yaml` example to configure your own hyperparameters file. 
