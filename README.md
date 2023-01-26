@@ -1,6 +1,6 @@
 # LFANet
 <p align="center">
-  <img src="infer.png" width="825"/>
+  <img src="infer.png"/>
 </p>  
 
 **LFANet based on detection method for plant counting, implementation of paper :**   
