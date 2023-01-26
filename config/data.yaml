@@ -1,0 +1,20 @@
+# dataset configure ----------------------------------------------------------------------------------------------------
+train: ./data/images/train/
+val: ./data/images/valid/
+test: ./data/images/test/
+nc: 1 # number of classes
+names: ['2023'] # class names
+
+# hyperparameter configure ---------------------------------------------------------------------------------------------
+lr0: 0.01  # initial learning rate
+lrf: 0.01  # final learning rate (lr0 * lrf)
+momentum: 0.937  # SGD momentum
+hsv_h: 0.015  # image HSV-Hue augmentation (fraction)
+hsv_s: 0.7  # image HSV-Saturation augmentation (fraction)
+hsv_v: 0.4  # image HSV-Value augmentation (fraction)
+translate: 0.2  # image translation (+/- fraction)
+scale: 0.9  # image scale (+/- gain)
+fliplr: 0.5  # image flip left-right (probability)
+mosaic: 1.0  # image mosaic (probability)
+mixup: 0.15  # image mixup (probability)
+paste_in: 0.15  # image copy paste (probability)
