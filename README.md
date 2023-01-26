@@ -1,6 +1,6 @@
 # LFANet
 <div align=center>
-<img src="https://github.com/Ye-Sk/TasselLFANet/blob/master/infer.png"/>
+<img src="infer.png"/>
 </div>   
 
 **LFANet based on detection method for plant counting, implementation of paper :**   
