@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 
 # Training
 ### Prepare Your Data
-1. You can download the `MrMT` dataset from [___Baidu Yun (9.2GB)___](https://github.com/Ye-Sk/MrMT)
+1. You can download the `MrMT` dataset from [___Baidu Drive (9.2GB)___](https://github.com/Ye-Sk/MrMT)
 2. Move your dataset into the `data` folder, please follow the format look like this :
 ~~~
 ├── data
