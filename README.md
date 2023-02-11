@@ -3,7 +3,7 @@
   <img src="https://github.com/Ye-Sk/MrMT/blob/master/LFANet_infer.png"/>
 </p>  
 
-**TasselLFANet based on detection method for plant counting, implementation of paper :**   
+TasselLFANet based on detection method for plant counting, implementation of paper :   
 [___TasselLFANet：A Novel Lightweight Multi-Branch Feature Aggregation Neural Network for High-throughput Image-based Maize Tassels Detection and Counting___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
 
 # Main results
