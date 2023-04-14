@@ -4,7 +4,7 @@
 </p>  
 
 TasselLFANet based on detection method for plant counting, implementation of paper :   
-[___TasselLFANet：A Novel Lightweight Multi-Branch Feature Aggregation Neural Network for High-throughput Image-based Maize Tassels Detection and Counting___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
+[___TasselLFANet：A Novel Lightweight Multi-Branch Feature Aggregation Neural Network for High-throughput Image-based Maize Tassels Detection and Counting___](https://www.frontiersin.org/articles/10.3389/fpls.2023.1158940/abstract)
 
 # Main results
 ### Object Detection on MrMT dataset
@@ -74,6 +74,8 @@ $ python infer.py --imgsz 640 --source 0  # on webcam
   title={TasselLFANet: A Novel Lightweight Multi-Branch Feature Aggregation Neural Network for High-throughput Image-based Maize Tassels Detection and Counting},  
   author={Yu, Zhenghong and Ye, Jianxiong and Li, Cuina and Zhou, Huabing and Li, Xun}, 
   journal={Frontiers in Plant Science}, 
+  volume={14},
+  pages={1291},
   year={2023}
 }
 ~~~
