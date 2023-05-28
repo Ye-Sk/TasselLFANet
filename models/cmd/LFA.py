@@ -346,22 +346,3 @@ repeats_number = [DownC, MP_C, BottleneckCSPA, BottleneckCSPB, BottleneckCSPC,
                       ResXCSPA, ResXCSPB, ResXCSPC,
                       RepResXCSPA, RepResXCSPB, RepResXCSPC,
                       GhostCSPA, GhostCSPB, GhostCSPC]
-
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--cfg', type=str, default='baseline.yaml', help='model.yaml')
-    parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
-    parser.add_argument('--profile', action='store_true', help='profile model speed')
-    opt = parser.parse_args()
-    opt.cfg = check_file(opt.cfg)  # check file
-    set_logging()
-    device = select_device(opt.device)
-
-    # Create model
-    model = Model(opt.cfg).to(device)
-    model.train()
-
-    if opt.profile:
-        img = torch.rand(1, 3, 640, 640).to(device)
-        y = model(img, profile=True)
