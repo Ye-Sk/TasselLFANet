@@ -814,7 +814,7 @@ def training(hyp, opt, device, cfg, tb_writer=None):
     # Directories
     wdir = save_dir / 'weights'
     wdir.mkdir(parents=True, exist_ok=True)  # make dir
-    last, best, results_file = wdir / 'LFANet-last.pt', wdir / 'LFANet.pt', save_dir / 'results.csv'
+    last, best, results_file = wdir / 'last.pt', wdir / 'best.pt', save_dir / 'results.txt'
 
     # Configure
     plots = True  # create plots
