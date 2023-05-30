@@ -5,46 +5,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class ELAN(nn.Module):
-    def __init__(self, c1, c2):
-        super(ELAN, self).__init__()
-        c_ = c1 // 2  # hidden channels
-        self.cv0 = Conv(c1, c_, 1, 1)
-        self.cv1 = Conv(c1, c_, 1, 1)
-        self.cv2 = Conv(c_, c_, 3, 1)
-        self.cv3 = Conv(c_, c_, 3, 1)
-        self.cv4 = Conv(c_, c_, 3, 1)
-        self.cv5 = Conv(c_, c_, 3, 1)
-        self.cv6 = Conv(c2, c2, 1, 1)
-
-    def forward(self, x):
-        multi1 = self.cv1(x)
-        multi3 = self.cv3(self.cv2(multi1))
-        multi5 = self.cv5(self.cv4(multi3))
-
-        return self.cv6(torch.cat((self.cv0(x), multi1, multi3, multi5), dim=1))
-
-class ELAN_H(nn.Module):
-    def __init__(self, c1, c2):
-        super(ELAN_H, self).__init__()
-        c_ = c2 // 2  # hidden channels
-        self.cv0 = Conv(c1, c2, 1, 1)
-        self.cv1 = Conv(c1, c2, 1, 1)
-        self.cv2 = Conv(c2, c_, 3, 1)
-        self.cv3 = Conv(c_, c_, 3, 1)
-        self.cv4 = Conv(c_, c_, 3, 1)
-        self.cv5 = Conv(c_, c_, 3, 1)
-        self.cv6 = Conv(c1 * 2, c2, 1, 1)
-
-    def forward(self, x):
-        multi1 = self.cv1(x)
-        multi2 = self.cv2(multi1)
-        multi3 = self.cv3(multi2)
-        multi4 = self.cv4(multi3)
-        multi5 = self.cv5(multi4)
-
-        return self.cv6(torch.cat((self.cv0(x), multi1, multi2, multi3, multi4, multi5), dim=1))
-
 class MP_C(nn.Module):
     def __init__(self, c1, c2, n=1, k=2):
         super(MP_C, self).__init__()
