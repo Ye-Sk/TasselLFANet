@@ -283,7 +283,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
 model_register = [nn.Conv2d, Conv, DWConv, GhostConv, RepConv, DownC, MP_C,
                  Bottleneck, BottleneckCSPA, BottleneckCSPB, BottleneckCSPC,
                  RepBottleneck, RepBottleneckCSPA, RepBottleneckCSPB, RepBottleneckCSPC,
-                 Res, ResCSPA, ResCSPB, ResCSPC, ECA, Mult_ECA,
+                 Res, ResCSPA, ResCSPB, ResCSPC, ECA, Mlt_ECA,
                  SPPCSPC_group, ELAN_H, ELAN, RepRes, RepResCSPA,
                  RepResCSPB, RepResCSPC, ResX, ResXCSPA, ResXCSPB, ResXCSPC,
                  RepResX, RepResXCSPA, RepResXCSPB, RepResXCSPC,
