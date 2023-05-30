@@ -105,9 +105,9 @@ class ECA(nn.Module):
         y = self.sigmoid(y)
         return x * y.expand_as(x)
 
-class Mult_ECA(nn.Module):
+class Mlt_ECA(nn.Module):
     def __init__(self, channel, b=1, gamma=2):
-        super(Mult_ECA, self).__init__()
+        super(Mlt_ECA, self).__init__()
         kernel_size = int(abs((math.log(channel, 2) + b) / gamma))
         kernel_size = kernel_size if kernel_size % 2 else kernel_size + 1
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
