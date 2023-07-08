@@ -13,5 +13,6 @@ def config():
     cfg = parser.parse_args()
     return cfg
 
-cfg = config()
-val(cfg)
+if __name__ == '__main__':
+    cfg = config()
+    val(cfg)
