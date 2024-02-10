@@ -75,7 +75,8 @@ $ python infer.py --imgsz 640 --source 0  # on webcam
   author={Yu, Zhenghong and Ye, Jianxiong and Li, Cuina and Zhou, Huabing and Li, Xun}, 
   journal={Frontiers in Plant Science}, 
   volume={14},
-  pages={1291},
-  year={2023}
+  pages={1291-1307},
+  year={2023},
+  doi={10.3389/fpls.2023.1158940}
 }
 ~~~
